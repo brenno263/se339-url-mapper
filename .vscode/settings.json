@@ -1,0 +1,4 @@
+{
+	"appService.defaultWebAppToDeploy": "/subscriptions/8835e0d5-a2bc-4efb-a21b-40a15b1a493f/appservices/subscriptions/8835e0d5-a2bc-4efb-a21b-40a15b1a493f/resourceGroups/appsvc_linux_centralus/providers/Microsoft.Web/sites/url-shortener-bseymour",
+	"appService.deploySubpath": "."
+}
