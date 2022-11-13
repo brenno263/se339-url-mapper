@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>URL Shortener</title>
+		<script src="/js/url-encoder.js"></script>
+	</head>
+	<body>
+		<h1>Url mapper service</h1>
+		<p>
+			Enter your destination, and we'll map a shorter URL for easy access.
+		</p>
+		<form id="url-form">
+			<label>
+				Destination
+				<input type="text" id="dest-input" />
+			</label>
+			<label>
+				Short name
+				<input type="text" id="slug-input" />
+			</label>
+			<input type="submit" value="Submit" />
+		</form>
+		<p id="result-text" hidden>asdf</p>
+	</body>
+</html>
