@@ -19,7 +19,11 @@ app.use('/store', async (req, res) => {
 		return;
 	}
 
-	db.storeURL(container, req.body.slug, req.body.dest);
+	let existingDest = await db.queryURL(container, req.body.slug);
+
+	if (!existingDest) {
+		db.storeURL(container, req.body.slug, req.body.dest);
+	}
 
 	res.end(JSON.stringify({ success: true }));
 });
